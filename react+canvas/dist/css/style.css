@@ -1,0 +1,41 @@
+#root {
+  width: 800px;
+  margin: 50px auto;
+}
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.range-slider {
+  width: 500px;
+}
+
+.range-slider input {
+  width: 100%;
+}
+
+.range-slider .labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.range-slider .labels span {
+  width: 10px;
+}
+
+.slider-input {
+  margin: 0 30px;
+  width: 40px;
+  padding-left: 20px;
+}
+
+.button-submit {
+  width: 140px;
+}
+
+#canvas {
+  border: 1px solid #000000;
+  margin-top: 30px;
+}

@@ -1,0 +1,95 @@
+.community {
+  background-image url('../images/community-bg.png')
+  padding-bottom 61px
+  background-size cover
+  background-position 0px -56px
+
+  &__content {
+    max-width 950px
+    margin-left auto
+    margin-right auto
+    text-align center
+    padding-top 37px
+  }
+
+  &__header {
+    font-family open-sans_semibold, sans-serif
+    color #9ec02d
+    font-size 39px
+    margin-bottom 30px
+  }
+
+  &__text {
+    font-family open-sans_regular, sans-serif
+    color #949494
+    max-width 920px
+    margin-left auto
+    margin-right auto
+    font-size 19px
+    line-height 34px
+  }
+
+  &__comments {
+    display flex
+    justify-content space-between
+    padding-top 74px
+  }
+}
+
+.comment {
+
+  &__cloud {
+    box-sizing border-box
+    width 397px
+    min-height 146px
+    background-color #fff
+    position relative
+    border-radius 10px
+    padding 20px
+
+    &:after {
+      content : ''
+      width: 0
+      height: 0
+      border-left 20px solid #fff
+      border-top 20px solid transparent
+      border-bottom 20px solid transparent
+      position: absolute
+      transform rotate(225deg)
+      left 78px
+      bottom -19px
+    }
+  }
+  &__header {
+    font-family open-sans_semibold, sans-serif
+    color #9ec02d
+    font-size 19px
+    margin-bottom 12px
+  }
+
+  &__content {
+    font-family open-sans_regular, sans-serif
+    color #848484
+    font-size 14px
+    line-height 22px
+  }
+
+  &__user {
+    margin-left 47px
+    margin-top 34px
+  }
+}
+
+.user {
+  display flex
+  align-items center
+  &__avatar {
+    border-radius 12px
+    margin-right 16px
+  }
+
+  &__name {
+    font-family montserrat_regular, sans-serif
+    color #494949
+  }
+}

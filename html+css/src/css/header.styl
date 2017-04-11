@@ -1,0 +1,127 @@
+.header-menu {
+  font-family open-sans_semibold, sans-serif
+  position fixed
+  background-color #fff
+  width 100%
+  left 0
+  top 0
+  height 65px
+  z-index 100
+  padding-top 20px
+
+  &__content {
+    display flex
+    justify-content space-between
+    align-items center
+    max-width 1300px
+    min-width 1100px
+    margin-left auto
+    margin-right auto
+  }
+
+  &__logo {
+    width 211px
+    height 44px
+    background-image url('../images/logo.png')
+    background-repeat no-repeat
+    margin-left 134px
+    margin-top -3px
+  }
+
+  &__navigation {
+    display flex
+    justify-content space-between
+    font-size 13px
+    width 498px
+    margin-left 29px
+    a {
+      text-decoration none
+      color #666
+      text-transform uppercase
+    }
+  }
+
+  &__button {
+    color #fff
+    width 100px
+    height 38px
+    margin-right 140px
+    background-color #bcda5c
+    border-radius 20px
+    border-style none
+    text-transform uppercase
+  }
+}
+
+.slider {
+  margin-top 85px
+  position relative
+
+  &__header {
+    font-family open-sans_semibold, sans-serif
+    color #fff
+    font-size 49px
+    text-align center
+
+    div {
+      font-size 36px
+      font-family open-sans_light
+      margin-top 13px
+    }
+  }
+
+  &__slide {
+    padding-top 113px
+    box-sizing border-box
+    height 570px
+
+    &_invite {
+      background-image url('../images/slide1.jpg')
+      background-position center
+    }
+  }
+
+  &__button {
+    font-family open-sans_semibold, sans-serif
+    display block
+    font-size 20px
+    color #fff
+    width 255px
+    height 74px
+    margin-right auto
+    margin-left auto
+    margin-top 48px
+    background-color #99c50a
+    border-radius 5px
+    border-style solid
+    border-width 2px
+    border-color #99c50a
+    transition all .3s
+
+    &:hover {
+      opacity 1
+      background-color #fff
+      color #99c50a
+    }
+  }
+
+  &__controls {
+    position: absolute;
+    display flex
+    justify-content space-between
+    bottom 43px
+    right 140px
+    width 58px
+    height 25px
+  }
+
+  &__control {
+    width 13px
+    height 20px
+    background-image url('../images/slider-control.png')
+
+    &_reverse {
+      transform rotate(180deg)
+    }
+  }
+}

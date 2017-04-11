@@ -1,0 +1,201 @@
+.projects {
+  width 980px
+  margin-left auto
+  margin-right auto
+  padding-top 48px
+
+  &__header {
+    font-family open-sans_semibold, sans-serif
+    color #515151
+    font-size 29px
+    margin-bottom 0
+  }
+
+  &__text {
+    font-family open-sans_regular, sans-serif
+    color #8f8f8f
+    width 675px
+    font-size 17px
+    line-height 30px
+    display inline-block
+  }
+
+  &__button {
+    font-family open-sans_semibold, sans-serif
+    display block
+    font-size 15px
+    color #8f8f8f
+    width 186px
+    height 53px
+    border-radius 10px
+    border-style solid
+    border-color #b6b6b6
+    background-color transparent
+    float right
+    margin-top -3px
+    transition all .2s
+
+    &:hover {
+      opacity 1
+      color #add136
+      border-color #add136
+    }
+  }
+
+  &__cards {
+    display flex
+    justify-content space-between
+    margin-top 43px
+    align-items flex-start
+  }
+}
+
+.project-card {
+  background-color #f9f9f9
+  border-color #e5e5e5
+  border-radius 12px
+  border-style solid
+  border-width 1px
+  overflow hidden
+  width 300px
+  position relative
+  padding-top 174px
+  padding-left 20px
+  padding-right 20px
+  padding-bottom 20px
+  box-sizing border-box
+
+  &_card-1 {
+    .progress-bar__inner {
+      width 40px
+    }
+  }
+
+  &_card-2 {
+    .progress-bar__inner {
+      width 180px
+    }
+  }
+
+  &_card-3 {
+    .progress-bar__inner {
+      width 40px
+    }
+  }
+
+  &__pic {
+    position absolute
+    top 0
+    left 0
+  }
+
+  &__label-new {
+    font-family montserrat_regular, sans-serif
+    color #fff
+    width 110px
+    height 55px
+    background-color #add136
+    transform rotate(-45deg)
+    position absolute
+    top -11px
+    left -40px
+    padding-top 27px
+    padding-left 35px
+    box-sizing border-box
+    text-transform uppercase
+  }
+
+  &__button {
+    font-family open-sans_regular, sans-serif
+    display block
+    position relative
+    font-size 15px
+    color #fff
+    width 140px
+    height 34px
+    border-radius 5px
+    background-color #26a6d1
+    margin-left 124px
+    text-align center
+    border-style solid
+    border-color #26a6d1
+    word-spacing 4px
+    transition all .3s
+
+    &:hover {
+      opacity 1
+      color #26a6d1
+      background-color #fff
+    }
+
+    span {
+      font-family open-sans_bold, sans-serif
+    }
+  }
+
+  &__header {
+    font-family open-sans_bold, sans-serif
+    color #484848
+    font-size 18px
+    margin-top 42px
+    margin-bottom 8px
+  }
+
+  &__text {
+    font-family open-sans_regular, sans-serif
+    color #484848
+    font-size 13px
+    line-height 23px
+    margin-bottom 15px
+  }
+
+  &__progress {
+    height 14px
+    width 254px
+    margin-bottom 16px
+  }
+
+  &__progress-container {
+    display flex
+    justify-content space-between
+    border-bottom 1px solid #d6d6d6
+    height 34px
+    margin-bottom 22px
+  }
+
+  &__progress-text {
+    font-family open-sans_semibold, sans-serif
+    color #8d8d8d
+    font-size 13px
+  }
+
+  &__progress-time {
+    font-family open-sans_semibold, sans-serif
+    color #8d8d8d
+    font-size 13px
+    margin-right 5px
+  }
+
+  &__link {
+    font-family open-sans_semibold, sans-serif
+    color #484848
+    text-decoration none
+    float right
+    position relative
+    margin-right 33px
+    transition all 1s
+
+    &:after {
+      content : ''
+      width: 0
+      height: 0
+      border-left 12px solid #add136
+      border-top 9px solid transparent
+      border-bottom 9px solid transparent
+      border-right 9px solid transparent
+      position: absolute
+      right -32px
+      top 3px
+    }
+  }
+}
